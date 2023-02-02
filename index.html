@@ -8,25 +8,46 @@
     <title>Adivinhe o número</title>
   </head>
   <body>
-    <header>
-      <h1>Adivinhe o número!</h1>
-      <div class="number">?</div>
-    </header>
-    <main>
-      <section class="left">
-        <p class="between">(Escolha um número entre 1 e 20)</p>
-        <input type="number" class="guess" />
-        <button class="btn check">Checar!</button>
-        <button class="btn again">Jogar novamente!</button>
-      </section>
-      <section class="right">
-        <p class="message">Chute um número...</p>
-        <p class="label-score">💯 Pontos: <span class="score">20</span></p>
-        <p class="label-highscore">
-          🥇 Maior pontuação: <span class="highscore">0</span>
-        </p>
-      </section>
-    </main>
+    <div class="mainContainer">
+      <header>
+        <h1>Adivinhe o número!</h1>
+        <p class="subTitle">Adivinhe qual número aparecerá na caixa</p>
+        <div class="number">?</div>
+      </header>
+      <main>
+        <section>
+          <p class="between">
+            (Digite um número entre 1 e 20 e clique em
+            <span
+              style="
+                color: green;
+                font-size: 1.7rem;
+                background-color: #fcf8fa;
+                padding: 0.2rem;
+                border-radius: 1rem;
+              "
+              >Checar!</span
+            >)
+          </p>
+          <input
+            type="number"
+            max="20"
+            min="1"
+            placeholder="Digite aqui!"
+            class="guess"
+          />
+          <button class="btn check">Checar!</button>
+          <button class="btn again">Jogar novamente!</button>
+        </section>
+        <section>
+          <p class="message">Seu chute foi...</p>
+          <p class="label-score">Pontos: <span class="score">20</span></p>
+          <p class="label-highscore">
+            🥇 Maior pontuação: <span class="highscore">0</span>
+          </p>
+        </section>
+      </main>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
